@@ -1,0 +1,16 @@
+form, footer, .container {
+  margin: 20px 0;
+}
+
+li {
+  cursor: pointer;
+}
+
+li.completed {
+  text-decoration: line-through;
+}
+
+.col-center {
+  float: none !important;
+  margin: 0 auto !important;
+}
