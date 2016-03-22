@@ -17,12 +17,6 @@ class Todos extends Component {
   }
 
 
-  onClickFilter(event, visibilityFilter) {
-    event.preventDefault();
-    this.props.setVisibilityFilter(visibilityFilter);
-  }
-
-
   getTodos() {
     switch(this.props.visibilityFilter) {
       case ALL:
@@ -42,7 +36,7 @@ class Todos extends Component {
       <div className="col-xs-6 col-center">
         <TodosAdd onSubmitForm={this.onSubmitForm.bind(this)} />
         <TodosList todos={this.getTodos()} onClickTodo={this.props.toggleTodo}/>
-        <TodosFooter onClickFilter={this.onClickFilter.bind(this)}
+        <TodosFooter onClickFilter={this.props.setVisibilityFilter}
                      currentFilter={this.props.visibilityFilter}/>
       </div>
     );

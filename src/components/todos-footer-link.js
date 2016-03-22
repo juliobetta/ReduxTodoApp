@@ -6,7 +6,7 @@ export default ({onClickFilter, visibilityFilter, currentFilter, label}) => {
     <button type="button"
             className="btn btn-secondary"
             disabled={currentFilter === visibilityFilter ? 'disabled' : ''}
-            onClick={(e) => onClickFilter(e, visibilityFilter)}>
+            onClick={() => onClickFilter(visibilityFilter)}>
       {label}
     </button>
   );

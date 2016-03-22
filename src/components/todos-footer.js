@@ -7,17 +7,17 @@ export default function ({onClickFilter, currentFilter}) {
   return (
     <center>
       <footer className="btn-group" role="group">
-        <FooterLink onClickFilter={(e) => onClickFilter(e, ALL)}
+        <FooterLink onClickFilter={onClickFilter}
                     visibilityFilter={ALL}
                     currentFilter={currentFilter}
                     label="All" />
 
-        <FooterLink onClickFilter={(e) => onClickFilter(e, COMPLETED)}
+        <FooterLink onClickFilter={onClickFilter}
                     visibilityFilter={COMPLETED}
                     currentFilter={currentFilter}
                     label="Completed"/>
 
-        <FooterLink onClickFilter={(e) => onClickFilter(e, ACTIVE)}
+        <FooterLink onClickFilter={onClickFilter}
                     visibilityFilter={ACTIVE}
                     currentFilter={currentFilter}
                     label="Active" />
