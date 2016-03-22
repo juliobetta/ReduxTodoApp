@@ -1,27 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import { ALL, ACTIVE, COMPLETED } from '../constants/filters';
-import FooterLink from './todos-footer-link';
+import FooterLink from '../containers/footer-link';
+import { setVisibilityFilter } from '../actions/index';
 
 
-export default function ({onClickFilter, currentFilter}) {
+export default () => {
   return (
     <center>
       <footer className="btn-group" role="group">
-        <FooterLink onClickFilter={onClickFilter}
-                    visibilityFilter={ALL}
-                    currentFilter={currentFilter}
-                    label="All" />
-
-        <FooterLink onClickFilter={onClickFilter}
-                    visibilityFilter={COMPLETED}
-                    currentFilter={currentFilter}
-                    label="Completed"/>
-
-        <FooterLink onClickFilter={onClickFilter}
-                    visibilityFilter={ACTIVE}
-                    currentFilter={currentFilter}
-                    label="Active" />
+        <FooterLink visibilityFilter={ALL}       label="All" />
+        <FooterLink visibilityFilter={COMPLETED} label="Completed" />
+        <FooterLink visibilityFilter={ACTIVE}    label="Active" />
       </footer>
     </center>
   );
-}
+};
