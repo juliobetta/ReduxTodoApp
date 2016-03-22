@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { ALL, ACTIVE, COMPLETED } from '../constants/filters';
-import FooterLink from '../containers/footer-link';
+import FooterLink from '../containers/todos-footer-link';
 import { setVisibilityFilter } from '../actions/index';
 
 
