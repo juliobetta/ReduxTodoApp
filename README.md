@@ -2,7 +2,7 @@
 
 Based on *Todo App* from [EggHead Getting Start with Redux ](https://egghead.io/series/build-your-first-react-js-application) series.
 
-![Todo App](https://raw.githubusercontent.com/juliobetta/ReduxTodoApp/master/todo-app.git)
+![Todo App](https://raw.githubusercontent.com/juliobetta/ReduxTodoApp/master/todo-app.gif)
 
 ### Getting Started ###
 
